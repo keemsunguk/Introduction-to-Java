@@ -23,7 +23,8 @@ public class ReturnKthDigit {
 		x1 = x;
 		if ( x < 0 ) {
 			x = -x;
-		} else if (x < Integer.MAX_VALUE) {
+		} 
+		if (x < Integer.MAX_VALUE) {
 			int div = (int) Math.pow(BASE, k-1);
 			//System.out.println(div);
 			if ( (div > 0) && (div < x)) {
