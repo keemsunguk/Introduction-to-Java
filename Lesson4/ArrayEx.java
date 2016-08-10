@@ -6,15 +6,18 @@ public class ArrayEx {
 		final int SIZE = 10;
 		int a[] = new int [SIZE];
 		
+		int sum2 = 0;
 		for(int i = 0; i < SIZE; i++) {
 			a[i] = i*10;
+			sum2 += a[i]; // sum = sum + a[i];
 		}
 		
+		System.out.println(sum2);
 		//Do something
 		
-//		for(int i = 0; i < SIZE; i++)  {
-//			System.out.println(a[i]);
-//		}
+		for(int i = 0; i < SIZE; i++)  {
+			System.out.println(a[i]);
+		}
 		
 		System.out.println("Size:"+a.length);
 		
@@ -29,6 +32,11 @@ public class ArrayEx {
 			//System.out.println(data[i]);
 			System.out.format("%5.2f\n",data[i]);
 		}
+		
+		
+		
+		
+		
 		
 		double sum = GetSum(data);
 		double mean = GetMean(data, sum);

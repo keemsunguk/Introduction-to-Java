@@ -25,6 +25,7 @@ public class DigitSeparator {
 		throws java.io.IOException {
 		
 		int x;
+		int x0;
 		int y = 1;
 		int divisor=0;
 		int z=0;
@@ -33,6 +34,10 @@ public class DigitSeparator {
 		System.out.print("Please enter the input integer: ");
 		x = inp.nextInt();
 		
+		x0  = x;
+		if (x < 0) {
+			x = -x;
+		}
 		////////////////////////////////////////////////////////////////////
 		while (x > 10) {
 			x = x - (divisor*z);
@@ -50,7 +55,11 @@ public class DigitSeparator {
 				divisor = (int)Math.pow(10, y);  
 			
 				z = x/divisor;
-				System.out.format("The %d digit is %d\n", divisor, z);
+				if(x0 < 0) {
+					System.out.format("The -%d digit is %d\n", divisor, z);
+				} else {
+					System.out.format("The %d digit is %d\n", divisor, z);
+				}
 			}
 		}
 		////////////////////////////////////////////////////////////////////

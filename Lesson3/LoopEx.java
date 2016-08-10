@@ -6,6 +6,17 @@ public class LoopEx {
 
 	public static void main(String[] args) {
 		
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		
+		for(int i = 1; i <=100; i++) {  //i +=2;  i = i + 2;
+			System.out.println(i);
+		}
+		
+		
+		
+		
 		int i;
 		for(i = 0; i < 10; i+=3) {
 			System.out.println(i);
@@ -14,13 +25,20 @@ public class LoopEx {
 		Scanner inp = new Scanner(System.in);
 		boolean flag = true;
 		
-//		System.out.print("When to stop?:");
-//		int k = inp.nextInt();
-//		while ( i < k ) {
-//			System.out.println(i++);
-//		}
+		System.out.print("When to stop?:");
+		int k = inp.nextInt();
+		i = 0;
+		while ( i < k ) {
+			System.out.println(++i);
+		}
 
+		int total = 0;
+		for( i = 0; i <= 10; i++) {
+			total += i;	//total = total + i;
+		}
+		System.out.println("Total is "+total);
 
+		
 		flag = true;
 		
 		while(flag) {
