@@ -3,7 +3,54 @@ package Lesson6;
 public class RunShape {
 
 	public static void main(String[] args) {
-		Triangle t1 = new Triangle();
+				
+		Triangle isaac = new Triangle();
+		isaac.height = 2;
+		isaac.base = 4;
+		isaac.name = "Isaac The Triangle";
+		isaac.ComputeArea();
+		System.out.println("Name: "+isaac.name);
+		System.out.println("The area after ComputeArea is "+isaac.area);
+		
+		Triangle alex = new Triangle(10,5,"Alex The Triangle");
+		alex.ComputeArea();
+		System.out.println("Name: "+alex.name);
+		alex.ComputeArea();
+		System.out.println("The area after ComputeArea is "+alex.area);
+		
+		Circle c1 = new Circle();
+		//c1.radius=5;   This is not legal because radius is a private menter of a Circle
+		c1.SetRadius(5);
+		c1.ComputeArea();		
+		System.out.println("C1 area: "+c1.area);
+		
+		Circle c2 = new Circle(10);
+		c2.ComputeArea();
+		c2.ComputeCircumf();
+		System.out.println("C2 area: "+c2.area);
+		System.out.println("C2 circumferenceooo: "+c2.GetCircumf());
+		
+		Shape s1 = new Triangle(3,5,"Shape");
+//		s1.ComputeArea();
+		((Triangle)s1).ComputeArea();
+		System.out.println("S1 area: "+s1.area);
+	
+		String dummy = s1.toString();
+		System.out.println(dummy);
+		
+//		Triangle t2 = new Circle();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/*		Triangle t1 = new Triangle();
 		System.out.println(t1.GetArea());
 		
 		Triangle t2 = new Triangle(4, 6);
@@ -38,7 +85,16 @@ public class RunShape {
 		r2.ComputeArea();
 		System.out.println(r2.name+" area is " +r2.GetArea());
 
-		
+//		Rectangle r3 = new Shape(20, 18, "Retangle");
+		Shape s1 = new Rectangle(4,5);
+		((Rectangle)s1).ComputeArea();
+		System.out.println(s1.name+" area is " +s1.GetArea());
+
+		s1 = null;
+		s1 = new Triangle(2,4);
+		((Triangle)s1).ComputeArea();
+		System.out.println(s1.name+" area is " +s1.GetArea());
+	*/	
 	}
 
 }

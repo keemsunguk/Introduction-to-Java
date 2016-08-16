@@ -7,7 +7,7 @@ public class RunStat {
 		
 		h.ReadInput();
 		
-		for(int i = 0; i < 23; i++) {
+		for(int i = 0; i < h.data.length; i++) {
 			System.out.println(h.data[i]);
 		}
 		
@@ -22,6 +22,19 @@ public class RunStat {
 		System.out.format("The mean is: %7.2f\n",mean);
 		System.out.println("STDEV:"+stdev+" (This is what happen when you dont format the output");	
 
+		s.ComputeMin();
+		s.ComputeMax();
+		
+		System.out.format("The minimum value is: %7.2f\n", s.GetMin());
+		System.out.format("The maximum value is: %7.2f\n",s.GetMax());		
+		
+		s.Sort();
+		
+//		for(int i = 0; i < h.data.length; i++) {
+//			System.out.println(h.data[i]);
+//		}
+		
+		
 		h.CloseFile();
 
 	}

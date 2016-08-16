@@ -5,12 +5,16 @@ public class SStat {
 	private double sum;
 	private double mean;
 	private double stdev;
+	private int size;
+	private double max = -Double.MAX_VALUE;
+	private double min = Double.MAX_VALUE;
 	
 	SStat() {
 		data = null;
 		sum = 0;
 		mean = 0;
 		stdev = 0;
+		size = 0;
 	}
 	
 	SStat(double [] d) {
@@ -18,10 +22,11 @@ public class SStat {
 		sum = 0;
 		mean = 0;
 		stdev = 0;
+		size = d.length;
 	}
 	
 	public void ComputeSum() {
-		for(int i = 0; i < data.length; i++) {
+		for(int i = 0; i < size; i++) {
 			sum += data[i];
 		}
 	}
@@ -31,7 +36,7 @@ public class SStat {
 	}
 
 	public double GetMean() {
-		mean = sum/data.length;		
+		mean = sum/size;		
 		return mean;
 	}
 
@@ -49,4 +54,34 @@ public class SStat {
 	public double GetStdev() {
 		return stdev;
 	}
+	
+	public void ComputeMax() {
+		for(int i = 0; i < size; i++) {
+			if( data[i] > max) {
+				max = data[i];
+			}
+		}
+	}
+	
+	public double GetMax() {
+		return max;
+	}
+
+	public void ComputeMin() {
+		for(int i = 0; i < size; i++) {
+			if( data[i] < min) {
+				min = data[i];
+			}
+		}
+	}
+	
+	public double GetMin() {
+		return min;
+	}
+
+	public void Sort() {
+		
+	}
+	
+	
 }
