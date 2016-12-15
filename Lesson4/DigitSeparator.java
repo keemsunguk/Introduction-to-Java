@@ -29,7 +29,7 @@ class DigitSeparator {
 			}
 			System.out.println(i+1+nth+" digit is "+digit);
 		}
-
+		num.close();
 	}
 	
 	static int FindMaxDigit(int inputNo) {

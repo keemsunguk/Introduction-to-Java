@@ -26,6 +26,9 @@ public class SimpleStat {
 			
 			System.out.println("The total is "+sum);
 			System.out.println("The mean is "+mean);
+			System.out.println("The stdev is "+stdev);
+			
+			inp.close();
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -55,7 +58,7 @@ public class SimpleStat {
 
 	private static double GetSum(double[] data) {
 		
-		int size = data.length;
+//		int size = data.length;
 		
 		double sum = data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+
 				data[10]+data[11]+data[12]+data[13]+data[14]+data[15]+data[16]+data[17]+data[18]+data[19]+

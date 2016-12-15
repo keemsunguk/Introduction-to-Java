@@ -18,6 +18,7 @@ public class ScanFileEx {
 				a[i] = inf.nextInt();
 				System.out.println(a[i]);
 			}
+			inf.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -17,6 +17,7 @@ public class FindTotalDigits {
 		}
 
 		System.out.println(y + " has "+k+" digits");
+		num.close();
 	}
 
 }

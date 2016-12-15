@@ -3,7 +3,6 @@ package Lesson6;
 public class ArrayEx {
 
 	public static void main(String[] args) {
-		int a[] = new int[100]; //type is int, name is a, size is 100
 
 		//random number generator
 		double d = 0;

@@ -33,5 +33,6 @@ public class Calculator {
 			div = x/y;
 			System.out.println(x+" / "+y+" = "+ div);			
 		}
+		num.close();
 	}
 }

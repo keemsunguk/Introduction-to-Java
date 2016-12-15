@@ -11,6 +11,7 @@ public class Greeting {
 		String yourName = inp.nextLine();
 		System.out.println("Hello, "+yourName+"!");
 
+		inp.close();
 	}
 
 }

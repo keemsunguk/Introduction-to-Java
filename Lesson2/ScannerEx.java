@@ -22,6 +22,8 @@ public class ScannerEx {
 		System.out.print("Enter another string:");
 		String s2 = inp.nextLine();
 		System.out.println("You entered "+s2	);
+		
+		inp.close();
 	}
 
 }

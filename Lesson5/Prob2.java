@@ -27,6 +27,8 @@ public class Prob2 {
 		System.out.println("Prob B: Sum of all even numbers from 1 to 10000 is "+sum);
 		int rem = sum % 27;
 		System.out.println("Prob C: The remainder of div by 27 is "+rem);
+		
+		inp.close();
 	}
 
 }

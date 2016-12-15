@@ -47,7 +47,7 @@ public class ConditionalEx {
 		
 		System.out.println(c);
 		
-		
+		inp.close();
 		
 	}
 }

@@ -47,6 +47,7 @@ public class SwitchEx {
 				c= "I give up";
 		}
 		System.out.print(c);
+		inp.close();
 	}
 
 }

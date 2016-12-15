@@ -18,6 +18,7 @@ public class GetNumber {
 		
 		System.out.println(f+s);
 
+		num.close();
 	}
 
 }

@@ -5,8 +5,6 @@ public class TypeCastEx {
 	public static void main(String[] args) {
 		
 		int i = 0;
-		double f = 345.5;
-		int sum = 302;
 		
 		double avg = (double)0/i;
 		

@@ -47,6 +47,7 @@ public class ReturnKthDigit {
 		} else {
 			System.out.println("Input x is too big");
 		}
+		inp.close();
 	}
 
 }

@@ -7,9 +7,9 @@ public class Triangle1 extends Shape1 {
 	private double a;
 	private double b;
 	private double c;
-	private double A;
-	private double B; 
-	private double C;
+//	private double A;
+//	private double B; 
+//	private double C;
 	
 	Triangle1() {
 		super();

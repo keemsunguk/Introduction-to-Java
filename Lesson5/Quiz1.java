@@ -23,6 +23,8 @@ public class Quiz1 {
 		double n = inp.nextDouble();
 		double res = Math.pow(2, n);
 		System.out.println("Prob C: 2 to the power of "+(int)n+" is "+res);
+		
+		inp.close();
 	}
 
 }

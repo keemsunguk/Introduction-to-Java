@@ -23,7 +23,7 @@ public class Prob1 {
 		double res = Math.pow(2, n);
 		System.out.println("Prob C: 2 to the power of "+(int)n+" is "+res);
 
-		
+		inp.close();
 
 	}
 

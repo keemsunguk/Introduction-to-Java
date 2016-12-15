@@ -26,6 +26,7 @@ public class ScanStat {
 			System.out.format("The mean is: %7.2f\n",mean);
 			System.out.println("STDEV:"+stdev+" (This is what happen when you dont format the output");	
 
+			inp.close();
 
 		} catch (FileNotFoundException e) {
 			System.out.println(e);

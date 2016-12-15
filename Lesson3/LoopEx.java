@@ -68,7 +68,7 @@ public class LoopEx {
 				flag = false;
 				System.out.println("Bye");
 			}
-			
+			inp.close();
 		}
 	}
 

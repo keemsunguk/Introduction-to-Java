@@ -13,7 +13,8 @@ public class Adder2 {
 		int j = num.nextInt();
 		int k = i + j;
 		System.out.println(i+" + "+j+" = "+k);
-
+		
+		num.close();
 	}
 
 }
